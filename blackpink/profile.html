@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+    <title>Blackpink in your area!</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- div: B L A Ɔ K  P I И K-->
+    <div class="text-center header p-5">
+        <!--"&nbsp is a space that will not break into a new line"-->
+        B L A Ɔ K&nbsp; P I И K
+    </div>
+
+    <!--div: navigation(click to go to another page)-->
+    <!--basic nav under "navs and tabs"-->
+    <div>
+        <ul class="nav">
+            <li class="nav-item">
+                <!-- <a> tag defines a hyperlink which links one page to another-->
+                <!--add "text-dark" into class to remove the bluish color of the link-->
+              <a class="nav-link active text-dark" aria-current="page" href="homepage.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="profile.html">Profiles</a>
+            </li>
+
+            <!--change 'Link' to <img src='img.png'> to show youtube logo-->
+            <li class="nav-item">
+                <a class="nav-link" 
+                    href="https://www.youtube.com/channel/UCOmHUn--16B90oW2L6FRR3A">
+                    <img src="img/youtube.png">
+                </a>
+              </li>
+            <li class="nav-item">
+                <a class="nav-link" 
+                    href="https://www.instagram.com/blackpinkofficial/">
+                    <img src="img/ig.png">
+                </a>
+              </li>
+          </ul>
+    </div>
+
+    <!--blackpink members individual profiles-->
+    <!--Instructions: When viewed on screen whose width is smaller than md, the cards are stacked vertically-->
+    <!--need to make webpage responsive on different screens -> "container-fluid" to encase entire division which includes rows and col-->
+    <div class="container-fluid">
+        <div class="row">
+
+            <!--jisoo's column-->
+            <!--3 columns for each member, if use "col", remove inline css "style"if not style will override-->
+            <!--will make each card smaller to occupy the reduced space, and the words inside the card will fit the space (go to next line if necessary)-->
+            <!--DON'T PUT COL OR COL-3 if not the cards will not stack on top of one another regardless of screen size even with container-fluid-->
+
+            <!--only applies to medium screen size, flexible for other screen sizes-->
+            <div class="col-md-3">
+                <div class="card">
+                    <!--want title to come before and after image-->
+                    <!--class='card-header' instead of card-title will give a left padding, but distiction is made obvious by a line-->
+                    <h5 class="card-header">Jisoo</h5>
+
+                    <img src="img/blackpink_ice_cream_jisoo.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <!--card title and subtitle should be WITHIN BODY TAG so that the body tag's padding will be given-->
+                        <h5 class="card-title">Jisoo</h5>
+                        <!--h6 card subtitle + grey text(Utilities -> colors)-->
+                        <h6 class="card-subtitle text-body-secondary">Kim Ji-soo</h6>
+                        <p class="card-text">
+                            <!--want the unordered list bullet points to become heartshapes; use external css stylesheet-->
+                            <ul>
+                                <li>
+                                    January 3, 1995
+                                </li>
+                                <li>
+                                    Gunpo, Gyeonggi, South Korea
+                                </li>
+                                <li>
+                                    Singer, actress
+                                </li>
+                            </ul>
+                        </p>
+
+                    <!--class card-link instead of button, to go to another page-->
+                    <!--if want to centralise jennie's instagram logo, "text-center" does not work due to unknown reasons-->
+                    <!--use inline/external/internal CSS style -->
+                    <!--display: flex makes the element a flexible container(division), so that its children(logo) become flexible items and can be horizontally aligned by properties like 'justify-content'-->
+                      <a href="https://www.instagram.com/sooyaaa__/?hl=en" class="card-link" style="display:flex;justify-content: center;"><img src="img/ig.png"></a>
+                    </div>
+                  </div>
+            </div>
+
+            <!--Jennie-->
+            <div class="col-md-3">
+                <div class="card">
+
+                    <h5 class="card-header">Jennie</h5>
+
+                    <img src="img/blackpink_ice_cream_jennie.jpg" class="card-img-top" alt="...">
+
+                    <div class="card-body">
+
+                        <h5 class="card-title">Jennie</h5>
+                        <h6 class="card-subtitle text-body-secondary">Jennie Ruby Jane Kim</h6>
+                        <p class="card-text">
+                            <ul>
+                                <li>
+                                    January 16, 1996
+                                </li>
+                                <li>
+                                    Seoul Capital Area, South Korea
+                                </li>
+                                <li>
+                                    Singer, rapper
+                                </li>
+                            </ul>
+                        </p>
+
+                        <a href="https://www.instagram.com/jennierubyjane/?hl=en" class="card-link"><img src="img/ig.png"></a>
+                    </div>
+                  </div>
+            </div>
+
+            <!--Rose-->
+            <div class="col-md-3">
+                <div class="card">
+
+                    <h5 class="card-header">Rose</h5>
+
+                    <img src="img/blackpink_ice_cream_rose.jpg" class="card-img-top" alt="...">
+
+                    <div class="card-body">
+
+                        <h5 class="card-title">Rose</h5>
+                        <h6 class="card-subtitle text-body-secondary">Roseanne Park Chaeyoung</h6>
+                        <p class="card-text">
+                            <ul>
+                                <li>
+                                    11 February 1997
+                                </li>
+                                <li>
+                                    Auckland, New Zealand
+                                </li>
+                                <li>
+                                    Singer                                </li>
+                            </ul>
+                        </p>
+
+                        <a href="https://www.instagram.com/roses_are_rosie/?hl=en" class="card-link"><img src="img/ig.png"></a>
+                    </div>
+                  </div>
+            </div>
+
+            <!--Lisa-->
+            <div class="col-md-3">
+                <div class="card">
+
+                    <h5 class="card-header">Lisa</h5>
+
+                    <img src="img/blackpink_ice_cream_lisa.jpg" class="card-img-top" alt="...">
+
+                    <div class="card-body">
+
+                        <h5 class="card-title">Lisa</h5>
+                        <h6 class="card-subtitle text-body-secondary">Pranpriya Manoban</h6>
+                        <p class="card-text">
+                            <ul>
+                                <li>
+                                    March 27, 1997
+                                </li>
+                                <li>
+                                    Buriram, Thailand
+                                </li>
+                                <li>
+                                    Rapper, singer
+                                </li>
+                            </ul>
+                        </p>
+
+                        <a href="https://www.instagram.com/lalalalisa_m/?hl=en" class="card-link"><img src="img/ig.png"></a>
+                    </div>
+                  </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+</html>
