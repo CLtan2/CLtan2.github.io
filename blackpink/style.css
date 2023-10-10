@@ -1,0 +1,27 @@
+.header{
+    /*zoom out to see and compare*/
+    background-color:rgb(249, 242, 243);
+    color: rgb(247, 194, 203);
+    border: 10px solid rgb(247, 194, 203);
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 48px;
+    font-weight: bold;
+}
+
+/*want entire page to be pink, not just a small segment/division assigned to the class*/
+/*use BODY TAG*/
+body{
+    background-color:rgb(249, 242, 243);
+}
+
+/*put the carousel into a smaller box to make it smaller*/
+.box{
+width: 480px;
+}
+
+ul{
+    /*relace list marker with the image specified*/
+    /*url('image link')*/
+    list-style-image: url('img/pink-heart.png')
+}
